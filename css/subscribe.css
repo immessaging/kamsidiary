@@ -1,0 +1,178 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+    line-height: 1.6;
+    background: url('../image/gallery.jpg');
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    
+    }
+    header h1{
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 30px;
+        font-weight: bolder;
+        text-decoration: underline;
+        color: goldenrod;
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+
+    #story {
+        margin-top: 0%;
+        color: white;
+        text-align: center;
+    }
+    .main {
+        width: 90vw;
+        height: 99vh;
+        border: 3px solid goldenrod;
+        background: black;
+        margin-top: 10px;
+       display: flex;
+       align-items: center;
+      justify-items: center;
+      background-size: cover;
+    box-shadow: 7px 14px 21px black;
+    position: absolute;
+    left: 50px;
+    right:50px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
+    .one {
+        border: 3px solid white;
+        background: green;
+       display: block;
+       float: left;
+    box-shadow: 14px 14px 21px white;
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    right: 50%;
+    padding: 14px;
+    margin-left: 20px;
+
+    }
+
+    .inner {
+        border: 3px outset black;
+        position: absolute;
+        top: 40%;
+        left:20%;
+        right:20%;
+        background-image: url('../image/diary-biography.jpg');
+        padding: 20px;
+        height:45vh ;
+        box-shadow: 7px 7px 21px goldenrod;
+        background-color: goldenrod;
+        box-shadow: 7px 7px 21px goldenrod;
+        box-shadow: 7px 7px 21px goldenrod;
+        
+        
+
+
+    }
+
+    .form {
+
+        border: 3px solid white;
+        background: green;
+       display: block;
+    box-shadow: 10px 10px 21px white;
+    float: right;
+    position: absolute;
+    left: 53%;
+    top: 5%;
+    bottom: 5%;
+    margin-right: 20px;
+    padding: 14px;
+    
+    }
+    .center{
+        text-align: left;
+    }
+    .subscribe{
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 4px black;
+        margin: 0em;
+    }
+    .legend {
+        font-style: oblique;
+        font-weight: bolder;
+        font-size: 25px;
+    margin: 0em;
+        padding: 0em;
+    }
+    fieldset{
+        background-color: goldenrod;
+    }
+    .tit {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        font-style: italic;
+        font-display: swap;
+    }
+    .center {
+        text-align: center;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+    }
+    .fill1 {
+         height: 2.5em;
+         width: 21em;
+         margin-top: 0px;
+    }
+    .fill2 {
+        height: 2.5em;
+        width: 21em;
+        margin-top: 0px;
+   }
+
+   .fill3 {
+    height: 2.5em;
+    width: 21em;
+    margin-top: 0px;
+}
+.submit{
+    border:1px  solid whitesmoke;
+    border-radius: 33px;
+    background-color: goldenrod;
+    width: 6.3em;
+    height: 2.7em;
+    color: green;
+    padding: 0em;
+    font-size: 1.3em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: grab;
+
+}
+
+.submit:hover {
+    color: white;
+    background-color: aqua;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+
+
+
+    
