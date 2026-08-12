@@ -1,13 +1,249 @@
-<!DOCTYPE HTML>
-<html>
-<Head>
-       <title style="Font-size: Larger; Color: gold;">BIOGRAPHY</title>
-</Head>
-<body style="Font-size: Larger; background-Color: gold; "> 
-         <h1 style="Font-size: Larger;Font-style:Serif;Text-align: center;text-shadow:7px;color: purple;" class="top" div="top">KAMSI DIARY <br> 
-          BIOGRAPHY
-        </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>My Biography | Kamsi Diary</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+
+<div class="logo">
+
+<a href="index.html">
+
+<img src="image/logo.png" alt="Kamsi Diary">
+
+</a>
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="features.html">Features</a></li>
+
+<li><a href="how-it-works.html">How It Works</a></li>
+
+<li><a href="testimonials.html">Testimonials</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-buttons">
+
+<a href="signin.html" class="btn-outline">Sign In</a>
+
+<a href="signup.html" class="btn">Start Your Diary</a>
+
+</div>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="bio-hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Your Story Matters</h1>
+
+<p>
+
+Every life is unique.
+
+Capture your memories, achievements, lessons,
+
+and experiences for generations to come.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Biography Form -->
+
+<section class="bio-container">
+
+<div class="bio-card">
+
+<h2>Create Your Biography</h2>
+
+<p>
+
+Start writing your life story one chapter at a time.
+
+</p>
+
+<form action="biography-save.php" method="POST">
+
+<div class="grid">
+
+<div>
+
+<label>Full Name</label>
+
+<input
+type="text"
+name="fullname"
+required>
+
+</div>
+
+<div>
+
+<label>Date of Birth</label>
+
+<input
+type="date"
+name="dob"
+required>
+
+</div>
+
+<div>
+
+<label>Occupation</label>
+
+<input
+type="text"
+name="occupation">
+
+</div>
+
+<div>
+
+<label>Country</label>
+
+<input
+type="text"
+name="country">
+
+</div>
+
+</div>
+
+<label>My Childhood</label>
+
+<textarea
+name="childhood"
+rows="5"
+placeholder="Tell us about your childhood..."></textarea>
+
+<label>Education</label>
+
+<textarea
+name="education"
+rows="5"></textarea>
+
+<label>Career Journey</label>
+
+<textarea
+name="career"
+rows="5"></textarea>
+
+<label>Marriage & Family</label>
+
+<textarea
+name="family"
+rows="5"></textarea>
+
+<label>Achievements</label>
+
+<textarea
+name="achievements"
+rows="5"></textarea>
+
+<label>Life Lessons</label>
+
+<textarea
+name="lessons"
+rows="5"></textarea>
+
+<label>Favorite Quotes</label>
+
+<textarea
+name="quotes"
+rows="4"></textarea>
+
+<label>Legacy Message</label>
+
+<textarea
+name="legacy"
+rows="8"
+placeholder="What do you want future generations to remember?"></textarea>
+
+<button type="submit">
+
+Save Biography
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- Quote -->
+
+<section class="legacy-quote">
+
+<h2>
+
+"What you write today lives beyond tomorrow."
+
+</h2>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<div class="footer-logo">
+
+<img src="image/logo.png">
+
+</div>
+
+<p>
+
+© 2026 Kamsi Diary.
+
+Your Story. Your Legacy. Forever.
+
+</p>
+
+<div class="footer-links">
+
+<a href="about.html">About</a>
+
+<a href="features.html">Features</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+</footer>
 
 </body>
 </html>
