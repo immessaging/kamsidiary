@@ -1,82 +1,639 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sign Up | Kamsi Diary</title>
-<link rel="stylesheet" href="css/kamsi-pages.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kamsi Diary | Create Account</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+
+    color: #fff;
+
+    font-family: Poppins, sans-serif;
+
+    background:
+        linear-gradient(
+            rgba(3,3,12,.90),
+            rgba(3,3,12,.97)
+        ),
+        url("image/main_image.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page {
+    width: min(1050px, 100%);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    background: rgba(7,6,18,.94);
+
+    border: 1px solid rgba(231,173,62,.20);
+
+    box-shadow:
+        0 30px 90px rgba(0,0,0,.55);
+}
+
+.brand-side {
+    min-height: 680px;
+
+    padding: 55px 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(104,20,168,.25),
+            rgba(3,3,12,.92)
+        );
+}
+
+.logo img {
+    width: 150px;
+}
+
+.brand-side h1 {
+    margin-top: 45px;
+
+    font-family: Cinzel, serif;
+
+    font-size: 42px;
+    line-height: 1.25;
+}
+
+.brand-side h1 span {
+    color: #d81772;
+}
+
+.brand-side p {
+    margin-top: 20px;
+
+    color: #aaa5b2;
+
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.quote {
+    margin-top: 50px;
+
+    color: #e7ad3e;
+
+    font-family: Georgia, serif;
+
+    font-size: 45px;
+}
+
+.quote-text {
+    max-width: 380px;
+
+    color: #ddd7e0;
+
+    font-family: Cinzel, serif;
+
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.form-side {
+    padding: 55px 45px;
+
+    background: rgba(5,5,16,.95);
+}
+
+.form-side h2 {
+    font-family: Cinzel, serif;
+    font-size: 32px;
+}
+
+.form-side .intro {
+    margin-top: 8px;
+
+    color: #85808d;
+
+    font-size: 11px;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #d4ced9;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+
+    padding: 14px;
+
+    color: #fff;
+
+    background: #090812;
+
+    border: 1px solid rgba(231,173,62,.18);
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-family: Poppins, sans-serif;
+}
+
+input:focus {
+    border-color: #e7ad3e;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 70px;
+}
+
+.toggle-password {
+    position: absolute;
+
+    top: 50%;
+    right: 12px;
+
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+
+    color: #e7ad3e;
+
+    cursor: pointer;
+
+    font-size: 10px;
+}
+
+.strength {
+    height: 4px;
+
+    margin-top: 8px;
+
+    border-radius: 5px;
+
+    background: #1a1720;
+
+    overflow: hidden;
+}
+
+.strength-bar {
+    width: 0;
+    height: 100%;
+
+    transition: .3s;
+}
+
+.terms {
+    margin-top: 20px;
+
+    display: flex;
+    gap: 8px;
+
+    color: #8f8997;
+
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.terms input {
+    width: auto;
+}
+
+button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 25px;
+
+    color: #fff;
+
+    background:
+        linear-gradient(
+            90deg,
+            #6814a8,
+            #d81772
+        );
+
+    cursor: pointer;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.login-link {
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: #888290;
+
+    font-size: 11px;
+}
+
+.login-link a {
+    color: #e7ad3e;
+}
+
+#formMessage {
+    margin-top: 12px;
+
+    text-align: center;
+
+    font-size: 11px;
+}
+
+@media(max-width:800px) {
+
+    .page {
+        grid-template-columns: 1fr;
+    }
+
+    .brand-side {
+        min-height: 400px;
+    }
+}
+
+@media(max-width:500px) {
+
+    .brand-side,
+    .form-side {
+        padding: 35px 25px;
+    }
+
+    .brand-side h1 {
+        font-size: 32px;
+    }
+}
+
+</style>
 </head>
+
 <body>
 
-<header class="site-header">
-<nav class="navbar">
-<a class="brand" href="index.html" aria-label="Kamsi Diary home">
-    <span class="brand-mark">K<span>D</span></span>
-    <span class="brand-name">KAMSI <span>DIARY</span></span>
-</a>
-<button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation">☰</button>
-<ul class="nav-links" id="navLinks">
-    <li><a href="index.html">HOME</a></li>
-    <li><a href="about.html">ABOUT</a></li>
-    <li><a href="features.html">FEATURES</a></li>
-    <li><a href="how-it-works.html">HOW IT WORKS</a></li>
-    <li><a href="testimonials.html">TESTIMONIALS</a></li>
-    <li><a href="contact.html">CONTACT</a></li>
-    <li><a class="nav-cta" href="signup.html" class="active">START YOUR DIARY</a></li>
-</ul>
-</nav>
-</header>
+<div class="page">
 
-<main>
-<section class="page-hero">
-  <div class="page-hero-inner">
-    <div class="eyebrow">START YOUR DIARY</div>
-    <h1 class="page-title">Your Legacy <span>Starts Here.</span></h1>
-    <p class="page-lead">Create your personal digital diary and begin building your story.</p>
-  </div>
+
+<section class="brand-side">
+
+    <a href="index.html" class="logo">
+        <img
+            src="image/kamsi-diary-logo-transparent.png"
+            alt="Kamsi Diary"
+        >
+    </a>
+
+    <h1>
+        Your story.
+        <span>Your legacy.</span>
+    </h1>
+
+    <p>
+        Create your personal digital diary and begin
+        preserving the moments, memories and milestones
+        that make your journey unique.
+    </p>
+
+    <div class="quote">
+        “
+    </div>
+
+    <div class="quote-text">
+        Your story is someone else's inspiration.
+    </div>
+
 </section>
 
-<section class="section"><div class="container">
-<div class="form-shell">
-<div class="eyebrow">CREATE YOUR ACCOUNT</div>
-<h2 class="section-title">Start your <span>diary.</span></h2>
-<p class="section-intro">Create your account and begin preserving the moments that matter.</p>
-<form action="signup.php" method="post">
-<div class="form-grid">
-<div class="form-group full"><label for="name">Full name</label><input id="name" name="name" maxlength="150" required></div>
-<div class="form-group"><label for="email">Email</label><input id="email" type="email" name="email" maxlength="190" required></div>
-<div class="form-group"><label for="password">Password</label><input id="password" type="password" name="password" minlength="8" required></div>
-</div>
-<div class="form-actions"><button class="btn" type="submit">CREATE MY DIARY</button><a class="btn gold" href="signin.html">ALREADY HAVE AN ACCOUNT?</a></div>
-</form>
-</div>
-</div></section>
 
-</main>
+<section class="form-side">
 
-<footer class="footer">
-<div class="footer-inner">
-    <div class="footer-brand">KAMSI <span>DIARY</span></div>
-    <div class="footer-copy">Your life is a story worth keeping.</div>
-    <div class="socials">
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">◎</a>
-        <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">◉</a>
-        <a href="mailto:info@kamsidiary.com" aria-label="Email">@</a>
+    <h2>
+        Create your diary
+    </h2>
+
+    <p class="intro">
+        Start preserving your story today.
+    </p>
+
+
+    <form
+        action="signup.php"
+        method="POST"
+        id="signupForm"
+    >
+
+
+        <div class="form-group">
+
+            <label for="fullname">
+                FULL NAME
+            </label>
+
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                required
+                autocomplete="name"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="email">
+                EMAIL ADDRESS
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="username">
+                USERNAME
+            </label>
+
+            <input
+                type="text"
+                id="username"
+                name="username"
+                required
+                autocomplete="username"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="password">
+                PASSWORD
+            </label>
+
+            <div class="password-wrapper">
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    minlength="8"
+                    autocomplete="new-password"
+                >
+
+                <button
+                    type="button"
+                    class="toggle-password"
+                    data-target="password"
+                >
+                    SHOW
+                </button>
+
+            </div>
+
+            <div class="strength">
+                <div
+                    class="strength-bar"
+                    id="strengthBar"
+                ></div>
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="confirm_password">
+                CONFIRM PASSWORD
+            </label>
+
+            <div class="password-wrapper">
+
+                <input
+                    type="password"
+                    id="confirm_password"
+                    name="confirm_password"
+                    required
+                    minlength="8"
+                    autocomplete="new-password"
+                >
+
+                <button
+                    type="button"
+                    class="toggle-password"
+                    data-target="confirm_password"
+                >
+                    SHOW
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="terms">
+
+            <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                required
+            >
+
+            <label for="terms">
+                I agree to the Kamsi Diary terms and
+                understand that my account information
+                will be processed according to the
+                service's privacy practices.
+            </label>
+
+        </div>
+
+
+        <button type="submit">
+            CREATE MY DIARY
+        </button>
+
+        <div id="formMessage"></div>
+
+    </form>
+
+
+    <div class="login-link">
+
+        Already have an account?
+
+        <a href="signin.html">
+            LOG IN
+        </a>
+
     </div>
+
+</section>
+
 </div>
-</footer>
 
 
 <script>
-const menuToggle=document.getElementById("menuToggle");
-const navLinks=document.getElementById("navLinks");
-if(menuToggle){
-  menuToggle.addEventListener("click",()=>{
-    navLinks.classList.toggle("show");
-    menuToggle.textContent=navLinks.classList.contains("show")?"×":"☰";
-  });
-}
+
+const password =
+    document.getElementById("password");
+
+const confirmPassword =
+    document.getElementById("confirm_password");
+
+const strengthBar =
+    document.getElementById("strengthBar");
+
+const form =
+    document.getElementById("signupForm");
+
+const message =
+    document.getElementById("formMessage");
+
+
+/* PASSWORD STRENGTH */
+
+password.addEventListener("input", function () {
+
+    const value = password.value;
+
+    let strength = 0;
+
+    if (value.length >= 8) strength++;
+    if (/[A-Z]/.test(value)) strength++;
+    if (/[a-z]/.test(value)) strength++;
+    if (/[0-9]/.test(value)) strength++;
+    if (/[^A-Za-z0-9]/.test(value)) strength++;
+
+    strengthBar.style.width =
+        (strength * 20) + "%";
+
+});
+
+
+/* SHOW / HIDE PASSWORD */
+
+document.querySelectorAll(".toggle-password")
+.forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+        const target =
+            document.getElementById(
+                button.dataset.target
+            );
+
+        if (target.type === "password") {
+
+            target.type = "text";
+            button.textContent = "HIDE";
+
+        } else {
+
+            target.type = "password";
+            button.textContent = "SHOW";
+
+        }
+
+    });
+
+});
+
+
+/* FORM VALIDATION */
+
+form.addEventListener("submit", function(event) {
+
+    if (
+        password.value !==
+        confirmPassword.value
+    ) {
+
+        event.preventDefault();
+
+        message.textContent =
+            "Passwords do not match.";
+
+        message.style.color =
+            "#d81772";
+
+        return;
+    }
+
+    if (password.value.length < 8) {
+
+        event.preventDefault();
+
+        message.textContent =
+            "Password must contain at least 8 characters.";
+
+        message.style.color =
+            "#d81772";
+
+    }
+
+});
+
 </script>
 
 </body>
