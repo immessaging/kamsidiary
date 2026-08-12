@@ -1,56 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=7.0">
-    <title>CONTACT</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact | Kamsi Diary</title>
+<link rel="stylesheet" href="css/kamsi-pages.css">
 </head>
 <body>
-    <P>12 GAYAM STREET <br>
-        LAFIA <br>
-        NASARAWA STATE <br>
-    </P>
-    <FORM style="font-size: larger; background-color: greenyellow;">
-        <label for="FORM">First-Name</label> <br>
-                     <input type="text"> <br>
-        <label>Last-Name</label> <br>
-                      <input type="text"> <br>
-        <label>Email</label> <br>
-                       <input type="text"> <br>
-    <label>Address</label> <br>
-                        <input type="text"> <br>
-    <label> Country</label> <br>
-                   <input type=" text"> <br>
-    <label> State</label> <br>
-                <input type="text"> <br>
-    <label style="height: fit-content;"> Comment</label> <br>
-                  <input type=" text"> <br>
-                  <label> Date</label><br>
-                  <input type="date"> <br>
-    <label> Password</label> <br>
-    <input type="password"> <br>
-    <label>Did I eat rice</label> <br>
-    <input type="checkbox" value="Rice"> <br>
-    <label>Did I read</label> <br>
-    <input type="checkbox" value="Did I read"> <br>
-    <label>Biology is the of______</label> <br>
-    <input type="radio" value="life" name="biology">life <br>
-    <input type="radio" value="things" name="biology">things <br>
-    <input type="radio" value="plants" name="biology">plants <br>
-    <label>Degree</label> <br>
-    <input type="file"> <br>
-    <label> State of Origin</label> <br>
-    <select name="State" id="name">
-             <option value="KOGI">KOGI</option>
-             <option value="NASARAWA">NASARAWA</option>
-             <option value="LAGOS">LAGOS</option>
-             <option value="ABUJA">ABUJA</option>
-    </select> <br>
-    <label>Comment</label> <br>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
 
-             <button>submit</button>    
-    </FORM>
+<header class="site-header">
+<nav class="navbar">
+<a class="brand" href="index.html" aria-label="Kamsi Diary home">
+    <span class="brand-mark">K<span>D</span></span>
+    <span class="brand-name">KAMSI <span>DIARY</span></span>
+</a>
+<button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation">☰</button>
+<ul class="nav-links" id="navLinks">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="features.html">FEATURES</a></li>
+    <li><a href="how-it-works.html">HOW IT WORKS</a></li>
+    <li><a href="testimonials.html">TESTIMONIALS</a></li>
+    <li><a href="contact.html" class="active">CONTACT</a></li>
+    <li><a class="nav-cta" href="signup.html">START YOUR DIARY</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="eyebrow">CONTACT</div>
+    <h1 class="page-title">Tell Us <span>Your Story.</span></h1>
+    <p class="page-lead">Questions, support, feedback and partnership conversations are welcome.</p>
+  </div>
+</section>
+
+<section class="section"><div class="container">
+<h2 class="section-title">Let's <span>connect.</span></h2>
+<p class="section-intro">Have a question, suggestion, partnership idea or support request? Send a message to the Kamsi Diary team.</p>
+<div class="form-shell">
+<form action="contact-submit.php" method="post">
+<div class="form-grid">
+<div class="form-group"><label for="name">Full name</label><input id="name" name="name" maxlength="100" required></div>
+<div class="form-group"><label for="email">Email address</label><input id="email" type="email" name="email" maxlength="190" required></div>
+<div class="form-group full"><label for="subject">Subject</label><input id="subject" name="subject" maxlength="180" required></div>
+<div class="form-group full"><label for="message">Message</label><textarea id="message" name="message" maxlength="5000" required></textarea></div>
+</div>
+<div class="form-actions"><button class="btn" type="submit">SEND MESSAGE</button></div>
+</form>
+</div>
+</div></section>
+
+</main>
+
+<footer class="footer">
+<div class="footer-inner">
+    <div class="footer-brand">KAMSI <span>DIARY</span></div>
+    <div class="footer-copy">Your life is a story worth keeping.</div>
+    <div class="socials">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">◎</a>
+        <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">◉</a>
+        <a href="mailto:info@kamsidiary.com" aria-label="Email">@</a>
+    </div>
+</div>
+</footer>
+
+
+<script>
+const menuToggle=document.getElementById("menuToggle");
+const navLinks=document.getElementById("navLinks");
+if(menuToggle){
+  menuToggle.addEventListener("click",()=>{
+    navLinks.classList.toggle("show");
+    menuToggle.textContent=navLinks.classList.contains("show")?"×":"☰";
+  });
+}
+</script>
+
 </body>
 </html>

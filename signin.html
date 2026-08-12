@@ -1,21 +1,82 @@
-<!DOCTYPE HTML>
-<html>
-<Head>
-       <title style="Font-size: Larger; Color: blue;">SIGNIN</title>
-</Head>
-<body style="Font-size: Larger; background-Color: gold; "> 
-         <h1 style="Font-size: Larger;Font-style:Serif;Text-align: center;text-shadow:7px;color: pitch;" class="left" div="left">KAMSI DIARY <br> 
-          SIGN-IN
-        </h1>
-<form style="Text-align: center;text-shadow:7px;color: ash;">
-        <lable>email</lable> <br>
-        <input type="text"> <br>
-         <lable>password</lable> <br>
-         <input type="password"> <br>
-          <button>submit</button>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sign In | Kamsi Diary</title>
+<link rel="stylesheet" href="css/kamsi-pages.css">
+</head>
+<body>
+
+<header class="site-header">
+<nav class="navbar">
+<a class="brand" href="index.html" aria-label="Kamsi Diary home">
+    <span class="brand-mark">K<span>D</span></span>
+    <span class="brand-name">KAMSI <span>DIARY</span></span>
+</a>
+<button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation">☰</button>
+<ul class="nav-links" id="navLinks">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="features.html">FEATURES</a></li>
+    <li><a href="how-it-works.html">HOW IT WORKS</a></li>
+    <li><a href="testimonials.html">TESTIMONIALS</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+    <li><a class="nav-cta" href="signup.html">START YOUR DIARY</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="eyebrow">ACCOUNT ACCESS</div>
+    <h1 class="page-title">Welcome <span>Back.</span></h1>
+    <p class="page-lead">Your story is waiting for you. Sign in to continue.</p>
+  </div>
+</section>
+
+<section class="section"><div class="container">
+<div class="form-shell">
+<div class="eyebrow">WELCOME BACK</div>
+<h2 class="section-title">Sign in to <span>Kamsi Diary.</span></h2>
+<p class="section-intro">Continue writing, organizing and preserving your story.</p>
+<form action="signin.php" method="post">
+<div class="form-grid">
+<div class="form-group full"><label for="email">Email</label><input id="email" type="email" name="email" autocomplete="email" required></div>
+<div class="form-group full"><label for="password">Password</label><input id="password" type="password" name="password" autocomplete="current-password" required></div>
+</div>
+<div class="form-actions"><button class="btn" type="submit">LOG IN</button><a class="btn gold" href="signup.html">CREATE ACCOUNT</a></div>
 </form>
+</div>
+</div></section>
+
+</main>
+
+<footer class="footer">
+<div class="footer-inner">
+    <div class="footer-brand">KAMSI <span>DIARY</span></div>
+    <div class="footer-copy">Your life is a story worth keeping.</div>
+    <div class="socials">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">◎</a>
+        <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">◉</a>
+        <a href="mailto:info@kamsidiary.com" aria-label="Email">@</a>
+    </div>
+</div>
+</footer>
 
 
+<script>
+const menuToggle=document.getElementById("menuToggle");
+const navLinks=document.getElementById("navLinks");
+if(menuToggle){
+  menuToggle.addEventListener("click",()=>{
+    navLinks.classList.toggle("show");
+    menuToggle.textContent=navLinks.classList.contains("show")?"×":"☰";
+  });
+}
+</script>
 
 </body>
 </html>

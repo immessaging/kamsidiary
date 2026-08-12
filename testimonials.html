@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sign Up | Kamsi Diary</title>
+<title>Testimonials | Kamsi Diary</title>
 <link rel="stylesheet" href="css/kamsi-pages.css">
 </head>
 <body>
@@ -20,9 +20,9 @@
     <li><a href="about.html">ABOUT</a></li>
     <li><a href="features.html">FEATURES</a></li>
     <li><a href="how-it-works.html">HOW IT WORKS</a></li>
-    <li><a href="testimonials.html">TESTIMONIALS</a></li>
+    <li><a href="testimonials.html" class="active">TESTIMONIALS</a></li>
     <li><a href="contact.html">CONTACT</a></li>
-    <li><a class="nav-cta" href="signup.html" class="active">START YOUR DIARY</a></li>
+    <li><a class="nav-cta" href="signup.html">START YOUR DIARY</a></li>
 </ul>
 </nav>
 </header>
@@ -30,24 +30,29 @@
 <main>
 <section class="page-hero">
   <div class="page-hero-inner">
-    <div class="eyebrow">START YOUR DIARY</div>
-    <h1 class="page-title">Your Legacy <span>Starts Here.</span></h1>
-    <p class="page-lead">Create your personal digital diary and begin building your story.</p>
+    <div class="eyebrow">TESTIMONIALS</div>
+    <h1 class="page-title">Your Experience. <span>Your Voice.</span></h1>
+    <p class="page-lead">Real experiences help others understand the value of preserving a personal story.</p>
   </div>
 </section>
 
 <section class="section"><div class="container">
-<div class="form-shell">
-<div class="eyebrow">CREATE YOUR ACCOUNT</div>
-<h2 class="section-title">Start your <span>diary.</span></h2>
-<p class="section-intro">Create your account and begin preserving the moments that matter.</p>
-<form action="signup.php" method="post">
-<div class="form-grid">
-<div class="form-group full"><label for="name">Full name</label><input id="name" name="name" maxlength="150" required></div>
-<div class="form-group"><label for="email">Email</label><input id="email" type="email" name="email" maxlength="190" required></div>
-<div class="form-group"><label for="password">Password</label><input id="password" type="password" name="password" minlength="8" required></div>
+<h2 class="section-title">Stories that <span>matter.</span></h2>
+<p class="section-intro">Share your experience with Kamsi Diary. Testimonials can be reviewed and published by the administrator.</p>
+<div class="card-grid">
+<article class="card"><h3>“My story deserves a place.”</h3><p>A diary can become a meaningful record for the people who come after us.</p></article>
+<article class="card"><h3>“Simple. Personal. Beautiful.”</h3><p>The purpose is to make preserving memories feel natural rather than complicated.</p></article>
+<article class="card"><h3>“A legacy in progress.”</h3><p>Every entry adds another piece to a larger personal history.</p></article>
 </div>
-<div class="form-actions"><button class="btn" type="submit">CREATE MY DIARY</button><a class="btn gold" href="signin.html">ALREADY HAVE AN ACCOUNT?</a></div>
+<div class="form-shell">
+<h2 class="section-title">Share your experience</h2>
+<form action="testimonial-submit.php" method="post">
+<div class="form-grid">
+<div class="form-group"><label for="name">Name</label><input id="name" name="name" maxlength="100" required></div>
+<div class="form-group"><label for="role">Role / relationship</label><input id="role" name="role" maxlength="100"></div>
+<div class="form-group full"><label for="message">Testimonial</label><textarea id="message" name="message" required maxlength="3000"></textarea></div>
+</div>
+<div class="form-actions"><button class="btn" type="submit">SUBMIT TESTIMONIAL</button></div>
 </form>
 </div>
 </div></section>
