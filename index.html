@@ -2,92 +2,523 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KAMSI DIARY</title>
+
+    <title>Kamsi Diary | Your Story. Your Legacy. Forever.</title>
+
+    <meta name="description"
+          content="Kamsi Diary helps you capture your life stories, memories, milestones and experiences in a beautiful digital space you can keep, share and pass on.">
+
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
-    <div class="hero">   
-    <nav> 
-        <ul id="navbar" class="topnav">
 
-                <li> <a href="index.html" id="home">HOME</a>
-                </li>
-                <li> <a href="biography.html" id="services">
-                  SERVICES
-                </a></li>
-                <li>
-                    <a href="about.html" id="community">
-                        COMMUNITY
-                    </a>
-                </li>
-                <li>
-                    <a href="contact.html" id="contact"> 
-                        CONTACT
-                    </a>
-                </li>
-                <li> <h2 type="button" id="button1">
-                    <a href="signin.html" id="login">
-                        LOG IN
-                    </a> 
-                </h2>
-                </li>
-                <li> 
-                    <h3 type="button" id="button2">
-                    <a href="signup.html" id="signup">
-                        SIGN UP
-                    </a> 
-                </h3>
-                </li>
-                <li>
-                    <h1 type="button" id="call"> <a href="subscribe.html">  Subscribe </a> </h1>
-                </li>
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="brand">
+            <span class="brand-kd">KD</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html" class="active">HOME</a>
+            </li>
+
+            <li>
+                <a href="about.html">ABOUT</a>
+            </li>
+
+            <li>
+                <a href="features.html">FEATURES</a>
+            </li>
+
+            <li>
+                <a href="how-it-works.html">HOW IT WORKS</a>
+            </li>
+
+            <li>
+                <a href="testimonials.html">TESTIMONIALS</a>
+            </li>
+
+            <li>
+                <a href="contact.html">CONTACT</a>
+            </li>
+
+            <li>
+                <a href="signup.html" class="nav-cta">
+                    <i class="fa-regular fa-user"></i>
+                    START YOUR DIARY
+                </a>
+            </li>
+
         </ul>
-       
-        <h2 class="logo">Kamsi <span>Diary</span></h2>
-</nav> 
-<header class="showcase">
-    <h1 class="name"> Welcome to Kamsi Dairy </h1> 
-    <h3 class="tag">
-   <em>Memories beyond living... 
 
-   </em>
+    </nav>
+
+</header>
 
 
-</h3> <br>
+<!-- =========================================================
+     HERO SECTION
+========================================================= -->
 
- 
-    <p> 
-         capture every moment, build memories and experiences <br>
-        Learn how <em>KAMSI DIARY </em> help you build your <br> digital biography, story,
-    and milestones  <br> </p> <br>
-<h4 type="button" id="action"> <a href="biography.html">READ MORE</a></h4> 
+<main>
 
-</header>  
-</div>
+<section class="hero">
+
+    <!-- Background image -->
+    <div class="hero-background"></div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-container">
+
+        <!-- LEFT CONTENT -->
+
+        <div class="hero-content">
+
+            <div class="logo-area">
+
+                <div class="logo-mark">
+                    <span>K</span>
+                    <span class="logo-d">D</span>
+                </div>
+
+                <h1 class="logo-title">
+                    KAMSI
+                    <span>DIARY</span>
+                </h1>
+
+                <div class="logo-tagline">
+                    YOUR STORY. YOUR LEGACY. FOREVER.
+                </div>
+
+            </div>
 
 
-<p id="para"> 
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas cum eveniet fugiat ipsa est facere, odit atque a reprehenderit esse impedit praesentium eum! Asperiores officia nostrum omnis iste necessitatibus, consequuntur ipsa. Laudantium similique accusamus doloribus sequi vitae fugit ullam eligendi eaque culpa sapiente aspernatur aliquid, mollitia architecto facilis quaerat voluptatem? 
-</p>
+            <h2 class="hero-title">
+                Preserve Today.
+                <br>
+                Inspire <span>Tomorrow.</span>
+            </h2>
 
 
-<section id="section1">
- 
-    <div id="gallery">
-        architecto facilis quaerat voluptatem?
+            <p class="hero-description">
+
+                Kamsi Diary helps you capture your life stories,
+                memories, milestones and experiences in a beautiful
+                digital space you can always keep, share and pass on.
+
+            </p>
+
+
+            <!-- FEATURE ROW -->
+
+            <div class="features-row">
+
+                <div class="feature-item">
+
+                    <div class="feature-icon gold">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+
+                    <h3>LIFE STORIES</h3>
+
+                    <p>
+                        Write your journey
+                        in your own words.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <div class="feature-icon pink">
+                        <i class="fa-regular fa-images"></i>
+                    </div>
+
+                    <h3>MEMORIES</h3>
+
+                    <p>
+                        Store and organize
+                        your precious memories.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <div class="feature-icon gold">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+
+                    <h3>MILESTONES</h3>
+
+                    <p>
+                        Celebrate your achievements
+                        and milestones.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <div class="feature-icon pink">
+                        <i class="fa-solid fa-user-group"></i>
+                    </div>
+
+                    <h3>SHARE &amp; CONNECT</h3>
+
+                    <p>
+                        Share your story with
+                        loved ones and generations.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <div class="feature-icon gold">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <h3>SECURE &amp; PRIVATE</h3>
+
+                    <p>
+                        Your data is safe,
+                        private and under your control.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE QUOTE -->
+
+        <div class="quote-card">
+
+            <div class="quote-mark">
+                “
+            </div>
+
+            <p>
+                Your story is<br>
+                someone else's<br>
+                inspiration.
+            </p>
+
+            <div class="quote-heart">
+                ♥
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE CTA -->
+
+        <div class="legacy-card">
+
+            <h2>
+                Your Legacy
+                <span>Starts Here</span>
+            </h2>
+
+            <p>
+                Create your personal
+                digital diary in minutes.
+            </p>
+
+            <a href="signup.html" class="primary-button">
+
+                CREATE MY DIARY
+
+                <span class="button-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+
+            </a>
+
+        </div>
+
+
+        <!-- LOWER RIGHT QUOTE -->
+
+        <div class="bottom-quote">
+
+            <div class="bottom-quote-mark">
+                “
+            </div>
+
+            <p>
+                What you write today,
+                <br>
+                lives beyond tomorrow.
+            </p>
+
+            <div class="bottom-heart">
+                ♥
+            </div>
+
+        </div>
+
     </div>
-    <div id="biography">
- architecto facilis quaerat voluptatem?
-    </div>
 
-<div class="diary">
-   architecto facilis quaerat voluptatem?
-</div>
-
-</div>
 </section>
-    
+
+
+<!-- =========================================================
+     DIGITAL HOME SECTION
+========================================================= -->
+
+<section class="legacy-section">
+
+    <div class="legacy-heading">
+
+        <span></span>
+
+        <h2>
+            A DIGITAL HOME FOR YOUR LEGACY
+        </h2>
+
+        <span></span>
+
+    </div>
+
+
+    <div class="legacy-features">
+
+
+        <!-- ITEM 1 -->
+
+        <article class="legacy-feature">
+
+            <div class="legacy-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <div>
+
+                <h3>
+                    BEAUTIFUL &amp; PERSONAL
+                </h3>
+
+                <p>
+                    Elegant pages designed
+                    to reflect who you are.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- ITEM 2 -->
+
+        <article class="legacy-feature">
+
+            <div class="legacy-icon">
+                <i class="fa-solid fa-cloud"></i>
+            </div>
+
+            <div>
+
+                <h3>
+                    ACCESS ANYTIME
+                </h3>
+
+                <p>
+                    Access your diary anywhere,
+                    anytime, on any device.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- ITEM 3 -->
+
+        <article class="legacy-feature">
+
+            <div class="legacy-icon">
+                <i class="fa-solid fa-users"></i>
+            </div>
+
+            <div>
+
+                <h3>
+                    FOR GENERATIONS
+                </h3>
+
+                <p>
+                    A legacy that can be
+                    passed down for generations.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- ITEM 4 -->
+
+        <article class="legacy-feature">
+
+            <div class="legacy-icon">
+                <i class="fa-solid fa-download"></i>
+            </div>
+
+            <div>
+
+                <h3>
+                    EXPORT &amp; PRESERVE
+                </h3>
+
+                <p>
+                    Download, print or
+                    preserve your story forever.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+    <div class="footer-left">
+
+        <span class="feather">
+            <i class="fa-solid fa-feather"></i>
+        </span>
+
+        <strong>
+            WRITE. PRESERVE. INSPIRE.
+        </strong>
+
+    </div>
+
+
+    <div class="footer-middle">
+
+        Your life is a story worth keeping.
+
+    </div>
+
+
+    <div class="footer-brand">
+
+        <span>KAMSI</span>
+        <b>DIARY</b>
+
+    </div>
+
+
+    <div class="social-links">
+
+        <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="mailto:info@kamsidiary.com" aria-label="Email">
+            <i class="fa-regular fa-envelope"></i>
+        </a>
+
+    </div>
+
+</footer>
+
+
+</main>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function () {
+
+    navLinks.classList.toggle("show");
+
+    const icon = menuToggle.querySelector("i");
+
+    if (navLinks.classList.contains("show")) {
+
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+
+    } else {
+
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+
+    }
+
+});
+
+
+/* Close menu after clicking a link */
+
+document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        navLinks.classList.remove("show");
+
+        const icon = menuToggle.querySelector("i");
+
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+
+    });
+
+});
+
+</script>
+
 </body>
 </html>
