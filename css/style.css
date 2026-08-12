@@ -278,24 +278,16 @@ button {
 /* Main image */
 
 .hero-background {
-
     position: absolute;
-
     inset: 0;
 
-    background-image:
-        url("../main_image.png");
-
+    background-image: url("../image/main_image.png");
     background-size: cover;
-
     background-position: center;
-
     background-repeat: no-repeat;
 
     z-index: 0;
-
 }
-
 
 /* Dark overlay keeps HTML text readable */
 
